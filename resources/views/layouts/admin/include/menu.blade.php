@@ -52,9 +52,6 @@
             <li>
                <a href="{{ route('allclassprof') }}" class="waves-effect"><span> Add Professor To class<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
             </li>
-            <li>
-               <a href="#" class="waves-effect"><span> Add Student To class<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
-            </li>
              <li>
                 <a href="{{ route('listseance') }}" class="waves-effect"><span> Add Seance to class<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
                 

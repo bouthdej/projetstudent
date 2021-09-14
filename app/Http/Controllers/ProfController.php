@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
 use App\User;
 use App\Seance;
 use App\Class_user;
@@ -29,17 +30,17 @@ class ProfController extends Controller
      */
     public function gettimetable()
     {
-        /* $user = User;
+        /*$user = User::all();
         $user=Auth::id();
         $seances = Seance::all();
-        if($seance->user_id==Auth::id()){
-            return view('prof.calendar',compact('seance','seances'));
+        if($seances->user_id==Auth::id()){
+            return view('prof.calendar',compact('seance','user'));*/
 
-        } */
-        $classe=Class_user::all();
+    
+        //$classe=Class_user::all();
         $seances = Seance::all();
-        $user=User::where('user_id','=',Auth::user()->id);
-        return view('prof.calendar',compact('seances','classe','user'));
+        $users = Role::where('id',2)->first()->users()->get();
+        return view('prof.calendar',compact('seances','users'));
     }
 
     /**
