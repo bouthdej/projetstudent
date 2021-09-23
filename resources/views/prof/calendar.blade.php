@@ -79,14 +79,11 @@
                                 <td align="center" height="50" width="300">
                                     
                                         @foreach ($seances as $seance)
-                                            @if ($seance->numSeance = 2 && $seance->day_of_week="Wednsday")
+                                            @if ($seance->numSeance = 1 && $seance->day_of_week="Monday")
                                                 <span >{{$seance->class_etudiants["className"]}}</span><br>
                                                 <span >{{$seance->num_class}}</span>
                                             @endif
                                         @endforeach
-                                        
-                                        
-                                    
                                 </td>
                                 <td rowspan="6" align="center" height="50">
                                     <h2>L<br>U<br>N<br>C<br>H</h2>
@@ -131,16 +128,7 @@
                                 <td align="center" height="50">
                                     <b>Thursday</b>
                                 </td>
-                                <td align="center" height="50" width="300"> </td>
-                                <td align="center" height="50">
-                                <div th:each="seance : ${classe.seances}">
-                                 <span th:if="${seance.numSeance} == 2 AND ${seance.dayOfWeek} == 'Thursday' "> 
-                                 <span th:utext="${seance.subjectName}"></span><br>
-                                 <span th:utext="${seance.prof.firstName}"></span> <span th:utext="${seance.prof.lastName}"></span><br>
-                                 <span th:utext="${seance.numClass}"></span>
-                                 </span>
-                                </div>
-                                </td>
+                             
                                 
                             </tr>
                             <tr>

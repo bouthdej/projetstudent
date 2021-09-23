@@ -20,7 +20,7 @@
             @endif
         </div>
           <div class="col -md-9 text-right ">
-              <a href="{{ route('studentcreate') }}" class="btn btn-primary create_btn m-b-10">Ajouter Student</a>
+              <a href="{{ route('studentcreate') }}" class="btn btn-primary create_btn m-b-10">Add Student</a>
           </div>
             <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline collapsed" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="datatable-buttons_info">
                 <thead>

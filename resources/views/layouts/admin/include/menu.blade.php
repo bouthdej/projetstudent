@@ -9,18 +9,7 @@
                    <i class="ti-home"></i><span> Dashboard </span>
                </a>
            </li>
-             
-             <li>
-                <a href="javascript:void(0);" class="waves-effect"><i class="ti-email"></i><span> Email <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
-                <ul class="submenu">
-                   <li><a href="email-inbox.html">Inbox</a></li>
-                   <li><a href="email-read.html">Email Read</a></li>
-                   <li><a href="email-compose.html">Email Compose</a></li>
-                </ul>
-             </li>
-          
-             
-             <li>
+              <li>
                 <a href="javascript:void(0);" class="waves-effect"><span> Professor <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
                 <ul class="submenu">
 

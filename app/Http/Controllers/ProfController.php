@@ -40,7 +40,7 @@ class ProfController extends Controller
         //$classe=Class_user::all();
         $seances = Seance::all();
         $users = Role::where('id',2)->first()->users()->get();
-        return view('prof.calendar',compact('seances','users'));
+        return view('prof.calendar',compact('seances'));
     }
 
     /**
